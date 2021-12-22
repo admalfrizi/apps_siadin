@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_background"
+    android:orientation="vertical"
+    tools:context=".loginandregistercomponents.RegisterScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_kampus"
+        android:layout_marginTop="@dimen/_50sdp"
+        tools:ignore="ContentDescription"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_32sdp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_60sdp">
+
+        <EditText
+            android:id="@+id/mhs_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_mhs"
+            android:drawablePadding="21dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/nama_mahasiswa"
+            android:paddingStart="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="DuplicateIds,RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/nim_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_nim_ic"
+            android:drawablePadding="21dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/hint_nim"
+            android:paddingStart="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/email_mhs_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_email_open"
+            android:drawablePadding="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/email_mahasiswa"
+            android:paddingStart="17dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/passwd_edtxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_pass_ic"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:hint="@string/hint_password"
+            android:paddingStart="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:inputType="textPassword"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn"
+        android:layout_width="@dimen/_122sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="67dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kamu_mahasiswa_udinus"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"/>
+
+        <TextView
+            android:id="@+id/lgn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/silahkan_login"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#3DFFF3"
+            android:textSize="@dimen/_9ssp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

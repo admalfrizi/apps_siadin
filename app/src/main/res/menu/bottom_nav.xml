@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/dashboard_ic"
+        android:enabled="true"
+        android:title="@string/dashboard" />
+
+    <item
+        android:id="@+id/document"
+        android:icon="@drawable/dokumen_ic"
+        android:title="@string/dokumen"/>
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/kalendar_ic"
+        android:title="@string/kalender"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profil_mhs_ic"
+        android:title="@string/profil"/>
+
+</menu>

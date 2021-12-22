@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.apps_siadin.screens.DashboardScreen"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard_screen" />
+
+    <fragment
+        android:id="@+id/navigation_document"
+        android:name="com.example.apps_siadin.screens.DocumentScreen"
+        android:label="Document"
+        tools:layout="@layout/activity_document_screen" />
+
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.apps_siadin.screens.CalendarScreen"
+        android:label="Calendar"
+        tools:layout="@layout/activity_calendar_screen" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.apps_siadin.screens.ProfileScreen"
+        android:label="Profile"
+        tools:layout="@layout/activity_profile_screen" />
+
+</navigation>
